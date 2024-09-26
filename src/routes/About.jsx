@@ -29,7 +29,7 @@ const About = () => {
         <div className="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
           <img
             className="rounded-lg-3"
-            src="bootstrap-docs.png"
+            src="/images/banner.png"
             alt=""
             width="720"
           />
