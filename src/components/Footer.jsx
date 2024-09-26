@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container">
-      <footer className="py-5">
+    <div className=" bg-color">
+      <footer className="footer-p container">
         <div className="row">
           <div className="col-6 col-md-2 mb-3">
             <h5>Section</h5>
@@ -112,7 +112,7 @@ const Footer = () => {
                   className="form-control"
                   placeholder="Email address"
                 />
-                <button className="btn btn-primary" type="button">
+                <button className="btn btn-secondary" type="button">
                   Subscribe
                 </button>
               </div>
@@ -120,7 +120,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <div className="d-flex flex-column flex-sm-row justify-content-between py-3 my-3 border-top">
           <p>© 2024 Company, Inc. All rights reserved.</p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3">

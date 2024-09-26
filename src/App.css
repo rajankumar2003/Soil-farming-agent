@@ -1,3 +1,16 @@
+/* header css */
+.bg-color{
+  background-color: rgb(222 222 222);
+}
+
+/* hero css */
+.hero-list{
+  margin-top: 0px;
+  padding-left: 6rem;      
+}
+
+
+
 /* distributer css */
 
 .item-container {
@@ -76,4 +89,17 @@
 
 .crop-details{
   overflow-wrap: break-word;
+}
+
+
+/* about css */
+.about-para{
+  margin-top: 1rem;
+}
+
+
+/* footer css */
+
+.footer-p{
+  padding-top: 4rem;
 }

@@ -20,7 +20,7 @@ const SoilList = () => {
             perferendis, repellendus eius, necessitatibus ipsa! Facere harum ea
             dolorem natus!
           </p>
-          <a href="#" className="btn btn-primary btn-lg">
+          <a href="#" className="btn btn-outline-secondary btn-lg">
             More crops
           </a>
         </div>

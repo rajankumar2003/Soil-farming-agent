@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-color">
       <div className="col-md-3 mb-2 mb-md-0">
         <Link
           to="/"
@@ -23,27 +23,28 @@ const Header = () => {
 
       <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li>
-          <Link to="/" className="nav-link px-2 link-secondary">
+          <Link to="/" className="nav-link px-3 link-body-emphasis">  
             Home
           </Link>
         </li>
+        {/* link-secondary */}
         <li>
-          <Link to="/Soils" className="nav-link px-3">
+          <Link to="/Soils" className="nav-link px-3 link-body-emphasis">
             Soil Details
           </Link>
         </li>
         <li>
-          <Link to="/Distrebuter" className="nav-link px-3">
+          <Link to="/Distrebuter" className="nav-link px-3 link-body-emphasis">
             Distributor Details
           </Link>
         </li>
         <li>
-          <Link to="/Crops" className="nav-link px-3">
+          <Link to="/Crops" className="nav-link px-3 link-body-emphasis">
             Crops
           </Link>
         </li>
         <li>
-          <Link to="/About" className="nav-link px-3">
+          <Link to="/About" className="nav-link px-3 link-body-emphasis">
             About
           </Link>
         </li>
@@ -58,10 +59,10 @@ const Header = () => {
             aria-label="Search"
           />
         </form> */}
-        <button type="button" className="btn btn-outline-primary me-4">
+        <button type="button" className="btn  btn-secondary me-4">
           Login
         </button>
-        <button type="button" className="btn btn-primary me-2">
+        <button type="button" className="btn btn-secondary me-4">
           Register
         </button>
       </div>
