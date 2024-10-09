@@ -3,6 +3,21 @@
   background-color: rgb(222 222 222);
 }
 
+/* Login */
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.radio-chek{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-color-login{
+  background-color: #2b3035;
+}
+
 /* hero css */
 .hero-list{
   margin-top: 0px;

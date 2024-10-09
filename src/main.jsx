@@ -9,6 +9,8 @@ import Distrebuter from "./routes/Distrebuter";
 import Crops from "./routes/Crops";
 import About from "./routes/About";
 import Home from './routes/Home';
+import LogIn from './components/LogIn';
+import Register from './components/Register';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/About",
         element: <About />,
+      },
+      {
+        path: "/Login",
+        element: <LogIn />,
+      },
+      {
+        path: "/Register",
+        element: <Register />,
       },
     ],
   },
