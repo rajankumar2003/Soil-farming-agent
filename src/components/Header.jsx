@@ -1,13 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [menu, setMenu] = useState(false);
   const handleNavigationOfLogin = () => {
     window.location.href = "/Login";
   };
   const handleNavigationOfRegister = () => {
     window.location.href = "/Register";
   };
+
+  const handelDropDown = () => {
+    setMenu(prevMenu => !prevMenu);
+    // if (menu === false) {
+    //   menu = true;
+    //   console.log("menue open ");
+    // }
+    // else if (menu === true) {
+    //   menu = false;
+    //   console.log("menue closed ");
+    // }
+  };
+
   return (
     <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-color">
       <div className="col-md-3 mb-2 mb-md-0">
@@ -80,62 +95,48 @@ const Header = () => {
           Register
         </button>
       </div>
-      <div className="dropdown">
-        <button
-          className="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
+      <div className="flex-shrink-0 dropdown ">
+        <a
+          href="#"
+          className={`d-block link-body-emphasis text-decoration-none dropdown-toggle ${(menu === true) && "show"}`}
           data-bs-toggle="dropdown"
           aria-expanded="false"
+          onClick={handelDropDown}
         >
-          Dropdown Menu
-        </button>
-        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          {/* Image Section */}
-          <li className="dropdown-item text-center">
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Profile"
-              className="img-thumbnail"
-              style={{ width: "100px", height: "100px" }}
-            />
-          </li>
-          <hr className="dropdown-divider" />
-          {/* Section 1 */}
+          <img
+            src="https://github.com/mdo.png"
+            alt="mdo"
+            width="32"
+            height="32"
+            className="rounded-circle"
+          />
+        </a>
+        <ul className={`dropdown-menu text-small shadow bg-color ${(menu === true) && "show"}`}  style={{position: "absolute", inset: "0px auto auto 0px", margin: "0px", transform: "translate3d(-114px, 35.4px, 0px)"}} data-popper-placement="bottom-start">
           <li>
             <a className="dropdown-item" href="#">
-              Section 1
+              New project...
             </a>
           </li>
           <li>
             <a className="dropdown-item" href="#">
-              Section 2
+              Settings
             </a>
           </li>
           <li>
             <a className="dropdown-item" href="#">
-              Section 3
+              Profile
             </a>
           </li>
           <li>
+            <hr className="dropdown-divider" />
+          </li>
+          <li>
             <a className="dropdown-item" href="#">
-              Section 4
+              Sign out
             </a>
           </li>
         </ul>
       </div>
-      {/* <div className="flex-shrink-0 dropdown">
-          <a href="#" className="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle"/>
-          </a>
-          <ul className="dropdown-menu text-small shadow" style="">
-            <li><a className="dropdown-item" href="#">New project...</a></li>
-            <li><a className="dropdown-item" href="#">Settings</a></li>
-            <li><a className="dropdown-item" href="#">Profile</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Sign out</a></li>
-          </ul>
-        </div> */}
     </header>
   );
 };

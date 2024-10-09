@@ -10,6 +10,7 @@ const DistrebuterList = () => {
       </div>
       <div className="company-name">distributer  name</div>
       <div className="item-name">crop name</div>
+      <div className="current-price">Phone number </div>
       <div className="price">
         <span className="current-price">Rs current prise </span>
         <span className="original-price">Rs original prize</span>

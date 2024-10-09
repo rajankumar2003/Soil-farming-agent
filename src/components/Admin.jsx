@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import PostDestributer from "./PostDestributer";
+import PostSoil from "./PostSoil";
 
-function Admin() {
+const Admin = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+   <div className="admin">
+   <PostDestributer/>
+   <PostSoil />
+   </div>
+  );
+};
 
-export default Admin
+export default Admin;
